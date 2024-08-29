@@ -1,16 +1,10 @@
-igsc (0.8.16-0ubuntu1~ppa3) noble; urgency=medium
+igsc (0.8.16-0ubuntu1~24.10~ppa2) oracular; urgency=medium
 
   * Added Provides for intel-gsc
 
  -- Shane McKee <shane.mckee@canonical.com>  Fri, 30 Aug 2024 01:10:40 +0800
 
-igsc (0.8.16-0ubuntu1~ppa2) noble; urgency=medium
-
-  * Changing to noble
-
- -- Shane McKee <shane.mckee@canonical.com>  Thu, 29 Aug 2024 18:51:31 +0800
-
-igsc (0.8.16-0ubuntu1~ppa1) oracular; urgency=medium
+igsc (0.8.16-0ubuntu1~24.10~ppa1) oracular; urgency=medium
 
   * Initial release.
 
