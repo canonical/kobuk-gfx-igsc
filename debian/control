@@ -6,6 +6,7 @@ Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
+ pkg-config,
  libudev-dev,
  libmetee-dev,
 Standards-Version: 4.6.2
@@ -41,6 +42,7 @@ Architecture: amd64
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+ libigsc0,
  libmetee-dev,
  libudev1,
 Description: Intel(R) Graphics System Controller Firmware Update Library
