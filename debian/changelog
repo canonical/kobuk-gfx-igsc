@@ -1,3 +1,9 @@
+igsc (0.9.3-0ubuntu1~24.10~ppa1) oracular; urgency=medium
+
+  * Bump version to 0.9.3
+
+ -- Shane McKee <shane.mckee@canonical.com>  Fri, 13 Sep 2024 16:17:05 +0800
+
 igsc (0.8.16-0ubuntu1~24.10~ppa2) oracular; urgency=medium
 
   * Added Provides for intel-gsc
