@@ -12,7 +12,7 @@ Build-Depends:
 Standards-Version: 4.6.2
 Homepage: https://github.com/intel/igsc
 
-Package: igsc
+Package: intel-gsc
 Section: devel
 Architecture: amd64
 Depends:
