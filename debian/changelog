@@ -1,4 +1,4 @@
-igsc (0.9.3-0ubuntu1~24.10~ppa2) oracular; urgency=medium
+igsc (0.9.3-0ubuntu1~24.10~ppa3) oracular; urgency=medium
 
   * Add proper depends for libigsc-dev 
 
