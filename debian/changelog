@@ -1,3 +1,9 @@
+igsc (0.9.3-0ubuntu1~24.10~ppa4) oracular; urgency=medium
+
+  * Rebuild due to newer version of metee
+
+ -- piandro-mobl2 <pavel.androniychuk@intel.com>  Mon, 30 Sep 2024 16:47:02 -0700
+
 igsc (0.9.3-0ubuntu1~24.10~ppa3) oracular; urgency=medium
 
   * Change igsc package name to intel-gsc to meet package name requirements 
