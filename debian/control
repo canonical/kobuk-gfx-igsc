@@ -1,18 +1,18 @@
 Source: igsc
 Section: libs
 Priority: optional
-Maintainer: Pedro Kopper <pedro.kopper@canonical.com>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
- pkg-config,
+ pkgconf,
  libudev-dev,
  libmetee-dev,
 Standards-Version: 4.6.2
 Homepage: https://github.com/intel/igsc
 
-Package: igsc
+Package: intel-gsc
 Section: devel
 Architecture: amd64
 Depends:
@@ -23,6 +23,16 @@ Depends:
  libudev1,
 Description: Intel(R) Graphics System Controller Firmware Update Library
  Intel(R) Graphics System Controller Firmware Update Library (IGSC FU)
+ The API is divided into 3 groups:
+  1. Device FW API: This API provides wrapper for accessing the GSC Firmware 
+   API. The API requires device access. This API includes actual image update
+   functionality.
+  2. Image API: Provides API for retrieving the required information from the
+   update images and utilizes library image parsing capabilities.
+  3. Device API: API utilizing underlying operating system in order to enumerate
+   and access graphics device and retrieve information.
+ Orthogonally the API provides facility to update GSC Firmware and the OPROM 
+ image.
 
 Package: libigsc0
 Section: libs
@@ -35,6 +45,17 @@ Depends:
  libudev1,
 Description: Intel(R) Graphics System Controller Firmware Update Library
  Intel(R) Graphics System Controller Firmware Update Library (IGSC FU)
+ The API is divided into 3 groups:
+  1. Device FW API: This API provides wrapper for accessing the GSC Firmware 
+   API. The API requires device access. This API includes actual image update 
+   functionality.
+  2. Image API: Provides API for retrieving the required information from the 
+   update images and utilizes library image parsing capabilities.
+  3. Device API: API utilizing underlying operating system in order to enumerate 
+   and access graphics device and retrieve information.
+ Orthogonally the API provides facility to update GSC Firmware and the OPROM 
+ image.
+
 
 Package: libigsc-dev
 Section: libdevel
@@ -42,8 +63,19 @@ Architecture: amd64
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- libigsc0,
+ libigsc0 (= ${binary:Version}),
  libmetee-dev,
  libudev1,
 Description: Intel(R) Graphics System Controller Firmware Update Library
  Intel(R) Graphics System Controller Firmware Update Library (IGSC FU)
+ The API is divided into 3 groups:
+  1. Device FW API: This API provides wrapper for accessing the GSC Firmware 
+   API. The API requires device access. This API includes actual image update 
+   functionality.
+  2. Image API: Provides API for retrieving the required information from the 
+   update images and utilizes library image parsing capabilities.
+  3. Device API: API utilizing underlying operating system in order to enumerate 
+   and access graphics device and retrieve information.
+ Orthogonally the API provides facility to update GSC Firmware and the OPROM 
+ image.
+
